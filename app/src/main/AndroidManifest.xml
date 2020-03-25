@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jlab.ImageExplorer"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_image"
+        android:largeHeap="true"
+        android:label="@string/app_name">
+
+        <activity
+            android:name="jlab.ImageExplorer.Activity.DirectoryActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppImageTheme"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="jlab.ImageExplorer.Activity.ImageViewActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/icon_image"
+            android:theme="@style/AppImageViewerTheme"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="file" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="jlab.ImageExplorer.Service.DeleteResourceService" />
+        <service android:name="jlab.ImageExplorer.Service.ResourceDownloaderService"/>
+    </application>
+</manifest>
