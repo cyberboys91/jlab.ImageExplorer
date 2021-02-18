@@ -33,14 +33,14 @@ import android.content.DialogInterface;
 import android.content.ContentResolver;
 import android.content.pm.PackageManager;
 import jlab.ImageExplorer.Resource.Resource;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import jlab.ImageExplorer.Resource.Directory;
 import jlab.ImageExplorer.db.FavoriteDetails;
 import jlab.ImageExplorer.db.ServerDbManager;
 import android.media.MediaScannerConnection;
 import android.media.MediaMetadataRetriever;
 import jlab.ImageExplorer.Resource.FileResource;
-import android.support.design.widget.Snackbar;
+import com.google.android.material.snackbar.Snackbar;
 import android.graphics.drawable.BitmapDrawable;
 import jlab.ImageExplorer.Resource.LocalStorageDirectories;
 

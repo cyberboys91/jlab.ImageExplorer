@@ -7,7 +7,7 @@ import android.content.Context;
 import android.app.Notification;
 import java.util.concurrent.Semaphore;
 import jlab.ImageExplorer.Interfaces;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import jlab.ImageExplorer.Resource.Resource;
 import jlab.ImageExplorer.Resource.Directory;
 import jlab.ImageExplorer.Resource.FileResource;

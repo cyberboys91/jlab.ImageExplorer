@@ -14,7 +14,7 @@ import android.widget.ArrayAdapter;
 import jlab.ImageExplorer.Utils;
 import android.content.DialogInterface;
 import jlab.ImageExplorer.Interfaces;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import jlab.ImageExplorer.db.ServerDetails;
 import jlab.ImageExplorer.db.ServerDbManager;
 

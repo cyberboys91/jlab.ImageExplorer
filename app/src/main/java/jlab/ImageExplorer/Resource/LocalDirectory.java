@@ -3,7 +3,6 @@ package jlab.ImageExplorer.Resource;
 import java.io.File;
 import android.net.Uri;
 import android.os.Handler;
-import android.support.v4.provider.DocumentFile;
 
 import java.util.ArrayList;
 import java.util.Comparator;

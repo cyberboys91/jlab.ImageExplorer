@@ -14,7 +14,7 @@ import android.graphics.BitmapFactory;
 import android.app.NotificationManager;
 import android.content.DialogInterface;
 import jlab.ImageExplorer.Interfaces;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import jlab.ImageExplorer.Resource.Resource;
 import jlab.ImageExplorer.Activity.DirectoryActivity;
 import jlab.ImageExplorer.Service.DeleteResourceService;

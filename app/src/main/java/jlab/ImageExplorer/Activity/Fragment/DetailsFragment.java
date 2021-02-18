@@ -9,7 +9,7 @@ import android.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import jlab.ImageExplorer.Utils;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import jlab.ImageExplorer.Resource.Resource;
 import jlab.ImageExplorer.Resource.FileResource;
 
